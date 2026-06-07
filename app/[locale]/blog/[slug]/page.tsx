@@ -1,8 +1,8 @@
 import { client, urlFor } from "@/lib/sanity";
 import { PortableText } from "@portabletext/react";
-import Header from '../../components/Header';
-import ArticleBody from "../../components/ArticleBody";
-import DailySummary from "../../components/DailySummary";
+import Header from '../../../components/Header';
+import ArticleBody from "../../../components/ArticleBody";
+import DailySummary from "../../../components/DailySummary";
 // ... vos autres imports
 
 async function getPost(slug: string) {

@@ -1,12 +1,12 @@
 // page.tsx (version finale)
 'use client';
 
-import ProjectCarousel from './components/ProjectCarousel';
+import ProjectCarousel from '../components/ProjectCarousel';
 import Image from 'next/image';
 import Link from 'next/link';
-import VisitorTracker from './components/VisitorTracker';
+import VisitorTracker from '../components/VisitorTracker';
 import styles from './app.module.css';
-import Header from './components/Header';
+import Header from '../components/Header';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 export default function Home() {

@@ -1,0 +1,12 @@
+{
+  "Header": {
+    "projects": "Projects",
+    "aboutMe": "About Me",
+    "blog": "Blog"
+  },
+  "AboutMeHero": {
+    "title": "I build scalable information systems, robust backend architectures, and fullstack apps.",
+    "description": "IT Engineering student at ESIR specializing in Information Systems. My background bridges a rigorous scientific foundation with expertise in software architecture, fullstack development, and data engineering. From my internship at Vitré Hospital to building AI-driven platforms, I am dedicated to creating robust and scalable solutions for complex challenges.",
+    "introduction": "Here's what I've been up to:"
+  }
+}

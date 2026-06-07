@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { client } from "@/lib/sanity";
 import { motion } from "framer-motion";
-import Header from "../components/Header";
-import NewsletterForm from "../components/NewsletterForm";
+import Header from "../../components/Header";
+import NewsletterForm from "../../components/NewsletterForm";
 
 export const revalidate = 60;
 

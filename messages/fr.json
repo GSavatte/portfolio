@@ -1,0 +1,12 @@
+{
+  "Header": {
+    "projects": "Projets",
+    "aboutMe": "À propos de moi",
+    "blog": "Blog"
+  },
+  "AboutMeHero": {
+    "title": "Je conçois des systèmes d'information adaptables aux besoins, des architectures backend robustes et des applications fullstack.",
+    "description": "Étudiant en ingénierie informatique à l'ESIR spécialisé dans les systèmes d'information. Mon parcours allie une solide formation scientifique à une expertise en architecture logicielle, développement fullstack et ingénierie des données. De mon stage à l'hôpital de Vitré à la création de plateformes alimentées par l'IA, je suis dédié à la création de solutions robustes et évolutives pour relever des défis complexes.",
+    "introduction": "Mon parcours en quelques points :"
+  }
+}
