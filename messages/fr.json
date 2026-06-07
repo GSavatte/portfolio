@@ -8,5 +8,42 @@
     "title": "Je conçois des systèmes d'information adaptables aux besoins, des architectures backend robustes et des applications fullstack.",
     "description": "Étudiant en ingénierie informatique à l'ESIR spécialisé dans les systèmes d'information. Mon parcours allie une solide formation scientifique à une expertise en architecture logicielle, développement fullstack et ingénierie des données. De mon stage à l'hôpital de Vitré à la création de plateformes alimentées par l'IA, je suis dédié à la création de solutions robustes et évolutives pour relever des défis complexes.",
     "introduction": "Mon parcours en quelques points :"
+  },
+  "carteBretonneRennes": {
+    "studiedInRennes": "J'ai étudié à Rennes, à l'ESIR pendant 4 ans."
+  },
+  "carteBretonneVitre": {
+    "bornInVitre": "Je suis né, j'ai grandi et j'ai fait mes études à Vitré jusqu'à ce que je commence mes études supérieures."
+  },
+  "DailySummary": {
+    "dailyMusic": "La musique du jour",
+    "dailyWeather": "La météo du jour",
+    "dailyStat": "La stat du jour",
+    "dailyNote": "La note perso du jour",
+    "noMusicToday": "Pas de musique aujourd'hui",
+    "morning": "Matin",
+    "afternoon": "Après-midi",
+    "minimum": "Minimale",
+    "maximum": "Maximale",
+    "missingData": "donnée manquante",
+    "noPersonalNote": "Rien à signaler aujourd'hui !"
+  },
+  "newsletterForm": {
+    "title": "Ne manquez aucun post 📬",
+    "description": "Entrez votre adresse mail pour recevoir un mail à chaque fois que je publie un nouveau post.",
+    "emailPlaceholder": "votre@email.com",
+    "successMessage": "Merci ! Votre adresse a bien été ajoutée à la liste.",
+    "errorMessage": "Oups, une erreur est survenue. Veuillez réessayer.",
+    "loadingMessage": "En cours...",
+    "submitButton": "S'abonner"
+  },
+  "home": {
+    "title": "Bonjour et bienvenue ! Je suis étudiant en informatique à l'École Supérieure d'Ingénieurs de Rennes (ESIR), spécialisé en systèmes d'information.",
+    "description": "Jetez un œil à mon travail à travers les onglets :D"
+  },
+  "blog": {
+    "title": "Mon année à Chicoutimi",
+    "description": "Ci-dessous, retrouvez une liste des posts que j'ai écrits sur mon année d'échange à l'Université du Québec à Chicoutimi (UQAC). Ce blog est surtout destiné à garder une trace et une chronologie de mes expériences, mais j'espère que cela pourra aussi être utile à d'autres étudiants qui envisagent un échange au Canada ! N'hésitez pas à me contacter si vous avez des questions sur l'UQAC ou la vie à Chicoutimi.",
+    "readMore": "Lire le post"
   }
 }

@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import Header from "../../components/Header";
 import NewsletterForm from "../../components/NewsletterForm";
 
+import { getTranslations } from "next-intl/server";
+
 export const revalidate = 60;
 
 async function getPosts() {
@@ -18,6 +20,7 @@ async function getPosts() {
 }
 
 export default async function BlogIndex() {
+  const t = await getTranslations('blog');
   const posts = await getPosts();
 
   return (
@@ -26,10 +29,10 @@ export default async function BlogIndex() {
       <div className="max-w-6xl mx-auto mb-16">
         <div className="w-full space-y-8">
           <h1 className="text-3xl md:text-5xl font-medium leading-relaxed tracking-wide text-center">
-            Mon année à Chicoutimi
+            {t('title')}
           </h1>
           <p className="text-lg md:text-xl font-light mt-8 tracking-wide text-gray-600">
-            Ci-dessous, retrouvez une liste des posts que j'ai écrits sur mon année d'échange à l'Université du Québec à Chicoutimi (UQAC). Ce blog est surtout destiné à garder une trace et une chronologie de mes expériences, mais j'espère que cela pourra aussi être utile à d'autres étudiants qui envisagent un échange au Canada ! N'hésitez pas à me contacter si vous avez des questions sur l'UQAC ou la vie à Chicoutimi.
+            {t('description')}
           </p>
         </div>
         <div className="grid grid-cols-1 gap-8 mt-20">
@@ -63,7 +66,7 @@ export default async function BlogIndex() {
                   {post.excerpt}
                 </p>
                 <div className="mt-6 text-sm font-medium flex items-center">
-                  Lire le post
+                  {t('readMore')}
                   <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
                 </div>
               </div>

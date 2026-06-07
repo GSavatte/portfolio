@@ -8,5 +8,42 @@
     "title": "I build scalable information systems, robust backend architectures, and fullstack apps.",
     "description": "IT Engineering student at ESIR specializing in Information Systems. My background bridges a rigorous scientific foundation with expertise in software architecture, fullstack development, and data engineering. From my internship at Vitré Hospital to building AI-driven platforms, I am dedicated to creating robust and scalable solutions for complex challenges.",
     "introduction": "Here's what I've been up to:"
+  },
+  "carteBretonneRennes": {
+    "studiedInRennes": "I studied in Rennes, at ESIR for 4 years."
+  },
+  "carteBretonneVitre": {
+    "bornInVitre": "I was born, raised, and went to school in Vitré until I started university."
+  },
+  "DailySummary": {
+    "dailyMusic": "Today's Music",
+    "dailyWeather": "Today's Weather",
+    "dailyStat": "Today's Stat",
+    "dailyNote": "Today's Personal Note",
+    "noMusicToday": "No music today",
+    "morning": "Morning",
+    "afternoon": "Afternoon",
+    "minimum": "Minimum",
+    "maximum": "Maximum",
+    "missingData": "missing data",
+    "noPersonalNote": "Nothing to report today!"
+  },
+  "newsletterForm": {
+    "title": "Don't miss any post 📬",
+    "description": "Enter your email to receive a mail every time I publish a new post.",
+    "emailPlaceholder": "your@email.address",
+    "successMessage": "Thank you! Your email has been added to the list.",
+    "errorMessage": "Oops, something went wrong. Please try again.",
+    "loadingMessage": "Loading...",
+    "submitButton": "Subscribe"
+  },
+  "home": {
+    "title": "Hello and welcome! I am studying Computer Science at the École Supérieure d'Ingénieurs de Rennes (ESIR), concentrating in Information Systems.",
+    "description": "Take a look at my work through the tabs :D"
+  },
+  "blog": {
+    "title": "My Year in Chicoutimi",
+    "description": "Below is a list of posts I've written about my exchange year at the University of Quebec in Chicoutimi (UQAC). This blog is mostly intended to keep a record and chronology of my experiences, but I hope it can also be useful to other students considering an exchange in Canada! Feel free to reach out if you have any questions about UQAC or life in Chicoutimi.",
+    "readMore": "Read the post"
   }
 }

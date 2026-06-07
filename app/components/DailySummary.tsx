@@ -1,6 +1,10 @@
+'use client';
 import React from 'react';
 
+import { useTranslations } from 'next-intl';
+
 export default function DailySummary({ data }: { data: any }) {
+  const t = useTranslations('dailySummary');
   if (!data) return null; // Si on n'a pas rempli le résumé, on ne l'affiche pas.
 
   // Fonction pour extraire l'ID YouTube
@@ -20,7 +24,7 @@ export default function DailySummary({ data }: { data: any }) {
         {/* 1. LA MUSIQUE DU JOUR (Rose) */}
         <div className="bg-[#f2c6c2] rounded-2xl p-6 flex flex-col h-full">
           {/* Titre en haut */}
-          <h3 className="text-xl font-bold mb-4 text-center">La musique du jour</h3>
+          <h3 className="text-xl font-bold mb-4 text-center">{t('dailyMusic')}</h3>
           {/* Conteneur flex-grow pour centrer le reste */}
           <div className="flex-grow flex items-center justify-center w-full">
             {ytId ? (
@@ -33,41 +37,41 @@ export default function DailySummary({ data }: { data: any }) {
                 />
               </div>
             ) : (
-              <div className="text-sm opacity-60">Pas de musique aujourd'hui</div>
+              <div className="text-sm opacity-60">{t('noMusicToday')}</div>
             )}
           </div>
         </div>
 
         {/* 2. LA MÉTÉO DU JOUR */}
         <div className="bg-[#fcefb4] rounded-2xl p-6 flex flex-col h-full">
-          <h3 className="text-xl font-bold mb-4 text-center">La météo du jour</h3>
+          <h3 className="text-xl font-bold mb-4 text-center">{t('dailyWeather')}</h3>
           <div className="flex-grow flex items-center justify-center">
             <div className="space-y-3 text-sm md:text-base font-medium w-fit">
-              <p className="flex items-center"><span className="w-30 font-bold">Matin</span>{data.weatherMorning || "-"}</p>
-              <p className="flex items-center"><span className="w-30 font-bold">Après-midi</span>{data.weatherAfternoon || "-"}</p>
-              <p className="flex items-center pt-2"><span className="w-30 font-bold">Minimale</span> {data.tempMin !== undefined ? `${data.tempMin}°C` : "-"}</p>
-              <p className="flex items-center"><span className="w-30 font-bold">Maximale</span> {data.tempMax !== undefined ? `${data.tempMax}°C` : "-"}</p>
+              <p className="flex items-center"><span className="w-30 font-bold">{t('morning')}</span>{data.weatherMorning || "-"}</p>
+              <p className="flex items-center"><span className="w-30 font-bold">{t('afternoon')}</span>{data.weatherAfternoon || "-"}</p>
+              <p className="flex items-center pt-2"><span className="w-30 font-bold">{t('minimum')}</span> {data.tempMin !== undefined ? `${data.tempMin}°C` : "-"}</p>
+              <p className="flex items-center"><span className="w-30 font-bold">{t('maximum')}</span> {data.tempMax !== undefined ? `${data.tempMax}°C` : "-"}</p>
             </div>
           </div>
         </div>
 
         {/* 3. LA STAT DU JOUR */}
         <div className="bg-[#cdeaca] rounded-2xl p-6 flex flex-col h-full">
-          <h3 className="text-xl font-bold mb-2 text-center">La stat du jour</h3>
+          <h3 className="text-xl font-bold mb-2 text-center">{t('dailyStat')}</h3>
           <div className="flex-grow flex flex-col items-center justify-center text-center">
             <span className="text-6xl md:text-7xl font-black tracking-tighter my-2">
               {data.statValue || "0"}
             </span>
-            <p className="text-lg font-medium opacity-80">{data.statLabel || "donnée manquante"}</p>
+            <p className="text-lg font-medium opacity-80">{data.statLabel || t('missingData')}</p>
           </div>
         </div>
 
         {/* 4. LA NOTE PERSO */}
         <div className="bg-[#c9d9ff] rounded-2xl p-6 flex flex-col h-full">
-          <h3 className="text-xl font-bold mb-4 text-center">La note perso du jour</h3>
+          <h3 className="text-xl font-bold mb-4 text-center">{t('dailyNote')}</h3>
           <div className="flex-grow flex items-center justify-center">
             <p className="text-sm md:text-base font-medium leading-relaxed opacity-80 text-left">
-              {data.personalNote || "Rien à signaler aujourd'hui !"}
+              {data.personalNote || t('noPersonalNote')}
             </p>
           </div>
         </div>

@@ -9,7 +9,11 @@ import styles from './app.module.css';
 import Header from '../components/Header';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
+import { useTranslations } from 'next-intl';
+
 export default function Home() {
+  const t = useTranslations('home');
+
   const { scrollY } = useScroll();
 
   const textOpacity = useTransform(scrollY, [0, 400], [1, 0]);
@@ -47,12 +51,10 @@ export default function Home() {
             style={{ opacity: textOpacity, y: textY }}
           >
             <h1 className="text-2xl md:text-4xl font-medium leading-relaxed tracking-wide">
-              Hello and welcome! I am studying <br className="hidden md:block" />
-              Computer Science at the École Supérieure <br className="hidden md:block" />
-              d'Ingénieurs de Rennes (ESIR), concentrating in <span className="underline underline-offset-8">Information Systems</span>.
+              {t('title')}
             </h1>
             <p className="text-lg md:text-xl font-light mt-8 tracking-wide">
-              Take a look at my work through the tabs :D
+              {t('description')}
             </p>
           </motion.div>
         </div>

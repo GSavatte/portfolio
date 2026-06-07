@@ -2,7 +2,11 @@
 import { motion } from 'framer-motion';
 import { BretagneSVG } from './BretagneSVG';
 
+import { useTranslations } from 'next-intl';
+
 export default function CarteBretonneVitre() {
+  const t = useTranslations('carteBretonneVitre');
+
   return (
       <motion.div 
           className="pointer-events-auto"
@@ -56,7 +60,7 @@ export default function CarteBretonneVitre() {
           <div className="text-center w-56 mt-13 -translate-x-16">
             <div className="text-slate-900 font-bold text-sm">Vitré</div>
             <div className="text-slate-500 text-xs mt-1 leading-relaxed">
-              I was born, raised, and went to school in Vitré until I started university.
+              {t('bornInVitre')}
             </div>
           </div>
 
